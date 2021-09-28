@@ -3,6 +3,7 @@
     padding: 0;
     font-family: sans-serif;
     scroll-behavior: smooth;
+    
 }
 
 .banner{
@@ -478,3 +479,96 @@ margin-right: 10px;
       width: 40%!important;
     }
   }
+
+  .brands{
+    margin-top: 500px;
+    margin-bottom: 100px;
+    
+  }
+
+.col-7{
+  width: 160px;
+}
+
+.col-7 img{
+  width: 100%;
+  cursor: pointer;
+}
+
+.row {
+  display: flex;
+}
+
+.col-7 {
+  flex: 33.33%;
+  padding: 1px;
+}
+
+.container-footer{
+max-width: 1300px;
+margin: auto;
+padding-left: 25px;
+padding-right: 25px;
+
+}
+
+.footer{
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  padding: 60px 0px 60px;
+  
+}
+
+.footer p{
+  color: white;
+}
+
+.footer h3{
+  color: white;
+  margin-bottom: 20px;
+}
+
+.footer-col-1,.footer-col-2,.footer-col-3, .footer-col-4{
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer-col-1{
+  flex-basis: 30%;
+  
+}
+
+.footer-col-2{
+  flex: 1;
+  text-align: center;
+}
+
+.footer-col-2 img{
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.footer-col-3, .footer-col-4{
+  flex-basis: 12%;
+  text-align: center;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.app-logo{
+  margin-top: 20px;
+}
+
+.app-logo img{
+  width: 120px;
+}
+
+.footer hr{
+  color: limegreen;
+  height: 0.1px;
+  margin: 20px 0;
+}
+
