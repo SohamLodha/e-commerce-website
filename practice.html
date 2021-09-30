@@ -5,18 +5,24 @@
     <title>Welcome to SOLO.</title>
     <link rel="stylesheet" href="practice.css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="banner">
         <div class="navbar">
-            <img src="images\soloINVI.png" class="logo">
-            <ul>
+            <div class="sub-Nav">
+                <img src="images\soloINVI.png" class="logo">
+                <ul>
 
-                <li> <a href="#">About</a></li>
-                <li> <a href="#">Deals</a></li>
-                <li> <a href="#">Contact us</a></li>
-            </ul>
+                    <li> <a href="#">About</a></li>
+                    <li> <a href="#">Deals</a></li>
+                    <li> <a href="#">Contact us</a></li>
+                </ul>
+            </div>
         </div>
         <div class="content">
             <h1> Welcome to SOLO.</h1>
@@ -79,8 +85,32 @@
         </div>
     </div>
     <div class="deals">
-        <p>deals</p>
+        <h1>Deals</h1>
+
     </div>
+
+    <div class="menu-wrapper">
+        <ul class="menu">
+            <li class="item">1</li>
+            <li class="item">2</li>
+            <li class="item">3</li>
+            <li class="item">4</li>
+            <li class="item">5</li>
+            <li class="item">6</li>
+        </ul>
+
+        <div class="paddles">
+            <button class="left-paddle paddle hidden">
+                <
+            </button>
+            <button class="right-paddle paddle">
+                >
+            </button>
+        </div>
+    </div>
+
+
+
     <div class="resp_form">
         <div class="contact_us">
             <div class="text">
@@ -124,30 +154,34 @@
                                 <input type="submit" value="submit">
                             </div>
                         </div>
+                    </div>
+                </div>
             </form>
         </div>
     </div>
 
     <div class="brands">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-7">
-                    <img src="images/nikelogo.png">
-                </div>
-                <div class="col-7">
-                    <img src="images/offwhitelogo.png">
-                </div>
-                <div class="col-7">
-                    <img src="images/GUCCILogo.png">
-                </div>
-                <div class="col-7">
-                    <img src="images/adidaslogo.png">
-                </div>
-                <div class="col-7">
-                    <img src="images/diorlogo.png">
-                </div>
-                <div class="col-7">
-                    <img src="images/karllogo.png">
+        <div class="subBrands">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-7">
+                        <img src="images/nikelogo.png">
+                    </div>
+                    <div class="col-7">
+                        <img src="images/offwhitelogo.png">
+                    </div>
+                    <div class="col-7">
+                        <img src="images/GUCCILogo.png">
+                    </div>
+                    <div class="col-7">
+                        <img src="images/adidaslogo.png">
+                    </div>
+                    <div class="col-7">
+                        <img src="images/diorlogo.png">
+                    </div>
+                    <div class="col-7">
+                        <img src="images/karllogo.png">
+                    </div>
                 </div>
             </div>
         </div>
@@ -188,12 +222,13 @@
             </div>
             <hr>
             <p class="copyright">Copyright 2021 - SOLO</p>
-            
+
         </div>
     </div>
 
-    <!-- <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
-<script src="main.js"></script> -->
+   
+
+    <script src="practice.js"></script>
 </body>
 
 </html>
