@@ -770,3 +770,9 @@ ul{
   display: inline-block;
   width: 100px;
 }
+
+
+.content .html_tag{
+  text-decoration: none;
+  color: white;
+}
