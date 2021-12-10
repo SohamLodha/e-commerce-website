@@ -22,7 +22,7 @@ body{
     flex-wrap: wrap;
     width: 1200px;
     transform-style: preserve-3d;
-    margin-top: 30px;
+    margin-top: 80%;
     
 }
 
@@ -199,6 +199,51 @@ body{
 .container .box:nth-child(12) .circle,
 .container .box:nth-child(12) .buy{
     background: lightyellow;
+}
+
+.container .box:nth-child(13) .circle,
+.container .box:nth-child(13) .buy{
+    background: black;
+}
+
+.container .box:nth-child(14) .circle,
+.container .box:nth-child(14) .buy{
+    background: gray;
+}
+
+.container .box:nth-child(15) .circle,
+.container .box:nth-child(15) .buy{
+    background: red;
+}
+
+.container .box:nth-child(16) .circle,
+.container .box:nth-child(16) .buy{
+    background: green;
+}
+
+.container .box:nth-child(17) .circle,
+.container .box:nth-child(17) .buy{
+    background: lightblue;
+}
+
+.container .box:nth-child(18) .circle,
+.container .box:nth-child(18) .buy{
+    background: peachpuff;
+}
+
+.container .box:nth-child(19) .circle,
+.container .box:nth-child(19) .buy{
+    background: black
+}
+
+.container .box:nth-child(20) .circle,
+.container .box:nth-child(20) .buy{
+    background: lightpink;
+}
+
+.container .box:nth-child(21) .circle,
+.container .box:nth-child(21) .buy{
+    background: orange;
 }
 
 .heading{
