@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -30,7 +31,7 @@
                     <ul>
                         <li><a href="practice.html">Home</a></li>
                         <li><a href="sell.html">Sell</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="http://127.0.0.1:5502/practice.html#contact">Contact Us</a></li>
 
                     </ul>
                 </div>
@@ -44,73 +45,97 @@
     <div class="container">
         <div class="box">
             <h2 class="name">Off-White x Blazer Mid 'Grim Reapers'</h2>
-            <a href="#" class="buy">Details</a>
+            <button class="buy btn open-modal">
+                Details
+            </button>
             <div class="circle"></div>
             <img src="images/GRIMFLIP.png" class="product">
         </div>
         <div class="box">
             <h2 class="name">Balenciaga Speed Sneaker</h2>
-            <a href="#" class="buy">Details</a>
+            <button class="buy btn open-modal">
+                Details
+            </button>
             <div class="circle"></div>
             <img src="images/balenciagasock.png" class="product">
         </div>
         <div class="box">
             <h2 class="name">Bapesta</h2>
-            <a href="#" class="buy">Details</a>
+            <button class="buy btn open-modal">
+                Details
+            </button>
             <div class="circle"></div>
             <img src="images/BathingApe.png" class="product">
         </div>
         <div class="box">
             <h2 class="name">BodegaX997s</h2>
-            <a href="#" class="buy">Details</a>
+            <button class="buy btn open-modal">
+                Details
+            </button>
             <div class="circle"></div>
             <img src="images/BodegaX997s.png" class="product">
         </div>
         <div class="box">
             <h2 class="name">Boost</h2>
-            <a href="#" class="buy">Details</a>
+            <button class="buy btn open-modal">
+                Details
+            </button>
             <div class="circle"></div>
             <img src="images/boost.png" class="product">
         </div>
         <div class="box">
             <h2 class="name">Product Name</h2>
-            <a href="#" class="buy">Details</a>
+            <button class="buy btn open-modal">
+                Details
+            </button>
             <div class="circle"></div>
             <img src="images/dior.png" class="product">
         </div>
         <div class="box">
             <h2 class="name">DiorXJordan</h2>
-            <a href="#" class="buy">Details</a>
+            <button class="buy btn open-modal">
+                Details
+            </button>
             <div class="circle"></div>
             <img src="images/DiorXJordan.png" class="product">
         </div>
         <div class="box">
             <h2 class="name">Gucci Ace 'Snake'</h2>
-            <a href="#" class="buy">Details</a>
+            <button class="buy btn open-modal">
+                Details
+            </button>
             <div class="circle"></div>
             <img src="images/guccisnake.png" class="product">
         </div>
         <div class="box">
             <h2 class="name">Karl Lagerfled Classic</h2>
-            <a href="#" class="buy">Details</a>
+            <button class="buy btn open-modal">
+                Details
+            </button>
             <div class="circle"></div>
             <img src="images/Karl.png" class="product">
         </div>
         <div class="box">
             <h2 class="name">OFFWHITEXNIKE rubber dunk</h2>
-            <a href="#" class="buy">Details</a>
+            <button class="buy btn open-modal">
+                Details
+            </button>
             <div class="circle"></div>
             <img src="images/OFFWHITEXrubberdunk.png" class="product">
         </div>
         <div class="box">
             <h2 class="name">PharellxAdidas</h2>
-            <a href="#" class="buy">Details</a>
+            <button class="buy btn open-modal">
+                Details
+            </button>
             <div class="circle"></div>
             <img src="images/pharellxadidas.png" class="product">
         </div>
         <div class="box">
             <h2 class="name">Yeezy 350's</h2>
-            <a href="#" class="buy">Details</a>
+            <button class="buy btn open-modal">
+                Details
+            </button>
             <div class="circle"></div>
             <img src="images/yeezy350flip.png" class="product">
         </div>
@@ -155,7 +180,8 @@
                                                     Date</span> </div>
                                             <div class="inputbox"> <input type="password" name="name" min="1" max="3"
                                                     maxlength="3" class="form-control" required="required">
-                                                <span>CVV</span><i class="fa fa-eye"></i> </div>
+                                                <span>CVV</span><i class="fa fa-eye"></i>
+                                            </div>
                                         </div>
                                         <div class="px-5 pay"> <button class="btn btn-success btn-block">Add
                                                 card</button> </div>
@@ -176,6 +202,18 @@
             </div>
         </div>
     </div>
+    <div class="modal__overlay hidden"></div>
+    <div role="dialog" aria-labelledby="dialog header" aria-modal="true" class="modal__wrapper hidden">
+        <div class="modal__header">
+            <h2>
+                Header of Modal
+            </h2>
+            <button aria-label="Close modal" class="modal__close">
+                <p>&times;</p>
+            </button>
+        </div>
+        <p>Content of the JS modal.</p>
+    </div>
 
 
 
@@ -186,6 +224,34 @@
                 max: 25,
                 speed: 400
             });
+    </script>
+    <script>
+        const modalBtn = document.querySelector(".open-modal");
+        const modal = document.querySelector(".modal__wrapper");
+        const overlay = document.querySelector(".modal__overlay");
+        const closeBtn = document.querySelector(".modal__close");
+
+        const openModal = () => {
+            modal.classList.remove("hidden");
+            overlay.classList.remove("hidden");
+        };
+
+        const closeModal = () => {
+            modal.classList.add("hidden");
+            overlay.classList.add("hidden");
+        };
+
+        // open modal function
+        modalBtn.addEventListener("click", openModal);
+
+        // closing modal&overlay on click and on ESC
+        closeBtn.addEventListener("click", closeModal);
+        overlay.addEventListener("click", closeModal);
+        document.addEventListener("keydown", (e) => {
+            if (e.keyCode === 27 && !modal.classList.contains("hidden")) {
+                closeModal();
+            }
+        });
     </script>
 </body>
 
